@@ -10,19 +10,54 @@
   <main>
     <p class="eyebrow">Ecoco 台灣團隊</p>
     <h1>Ecoco 本機短影音發布器</h1>
-    <p class="lead">將 Ecoco 自有繁體商品影片安全地排程與發布至官方 TikTok 帳號。</p>
+    <p class="lead">一套給 Ecoco 台灣內部營運人員使用的桌面工具，用來管理自有繁體商品短影音、檢查成效，並透過 TikTok 官方 API 發布至 Ecoco 官方 TikTok 帳號。</p>
+
+    <section class="panel">
+      <h2>這個 App 做什麼</h2>
+      <p>Ecoco 本機短影音發布器不是登入頁，也不是一般行銷 landing page。它是 Ecoco 台灣團隊正在使用的內部營運工具公開說明頁，讓 TikTok 審核人員了解 App 的產品目的、授權流程、資料使用方式與測試內容。</p>
+      <ul>
+        <li>整理 Ecoco 自有商品影片與已核准文案。</li>
+        <li>讓授權管理者確認標題、隱私設定、互動設定與商業內容揭露。</li>
+        <li>使用 TikTok Content Posting API 上傳並發布自有影片。</li>
+        <li>使用 TikTok 官方 API 讀取帳號基本資訊、粉絲統計與影片列表，用於每日社群成效回報。</li>
+      </ul>
+    </section>
 
     <h2>運作方式</h2>
     <ol>
       <li>授權管理者透過 TikTok Login Kit 登入。</li>
-      <li>工具查詢帳號可用的隱私與互動選項。</li>
-      <li>管理者選擇自有影片並確認標題、揭露與發布設定。</li>
-      <li>工具以 TikTok Content Posting API 上傳並查詢結果。</li>
+      <li>App 以 OAuth 2.0、PKCE 與 state 驗證完成授權，不要求或保存 TikTok 密碼。</li>
+      <li>工具查詢帳號可用的發布、隱私、互動與創作者設定。</li>
+      <li>管理者選擇 Ecoco 自有影片並確認標題、揭露與發布設定。</li>
+      <li>工具以 TikTok Content Posting API 上傳、發布，並查詢發布結果。</li>
+      <li>每日報表只讀取官方 API 提供的粉絲、影片清單與可見成效資料；平台未提供時會標示為未提供，不推測。</li>
     </ol>
 
+    <h2>要求的 TikTok 權限</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>權限</th>
+          <th>用途</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>user.info.basic</td><td>確認授權帳號與顯示名稱。</td></tr>
+        <tr><td>user.info.stats</td><td>讀取粉絲與公開統計，供每日社群報表使用。</td></tr>
+        <tr><td>video.list</td><td>核對官方帳號已公開影片清單與可見成效。</td></tr>
+        <tr><td>video.upload</td><td>上傳 Ecoco 已審核的自有短影音檔案。</td></tr>
+        <tr><td>video.publish</td><td>在管理者確認後發布至 Ecoco 官方 TikTok 帳號。</td></tr>
+      </tbody>
+    </table>
+
+    <h2>審核示範</h2>
+    <p>以下影片是 Ecoco 自有商品教育短影音，用於展示 App 會處理的內容類型。實際發布前，管理者仍會在本機工具確認影片、標題、隱私設定與商業內容揭露。</p>
+    <video class="demo-video" controls playsinline preload="metadata" src="media/E24235_traditional_9x16.mp4"></video>
+
+    <h2>資料安全</h2>
     <p>授權 Token 只保存在管理者 Mac 的 macOS Keychain。本工具不讀取瀏覽器 Cookie、不保存 TikTok 密碼，也不繞過平台安全驗證。</p>
 
-    <p class="footer"><a href="tiktok-terms.html">服務條款</a> · <a href="tiktok-privacy-policy.html">隱私政策</a></p>
+    <p class="footer"><a href="tiktok-app.html">完整 App 說明</a> · <a href="tiktok-terms.html">服務條款</a> · <a href="tiktok-privacy-policy.html">隱私政策</a></p>
   </main>
 </body>
 </html>

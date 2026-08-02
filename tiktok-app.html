@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ecoco 本機短影音發布器｜App 說明</title>
+  <link rel="stylesheet" href="legal.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Ecoco 台灣團隊</p>
+    <h1>App 說明與 TikTok 審核資訊</h1>
+    <p class="updated">最後更新：2026-08-02</p>
+    <p class="lead">Ecoco 本機短影音發布器協助 Ecoco 台灣團隊以人工審核、本機保存與官方 API 的方式，管理 TikTok 短影音發布與每日成效回報。</p>
+
+    <h2>產品背景</h2>
+    <p>Ecoco 台灣營運多個居家收納與生活用品社群帳號。這個 App 用於官方 TikTok 帳號的內部工作流程：把已製作、已授權、已確認的繁體中文商品教育短影音，透過 TikTok Content Posting API 發布，並用 TikTok 官方 API 回讀可見成效資料。</p>
+
+    <h2>主要使用者</h2>
+    <ul>
+      <li>Ecoco 台灣社群營運人員。</li>
+      <li>已被授權管理 Ecoco 官方 TikTok 帳號的人員。</li>
+      <li>TikTok App Review 審核人員，可透過本頁了解 App 功能、授權範圍與資料使用方式。</li>
+    </ul>
+
+    <h2>主要功能</h2>
+    <div class="grid">
+      <section class="card">
+        <h3>授權連線</h3>
+        <p>使用 TikTok Login Kit、OAuth 2.0、PKCE 與 state 驗證連線官方帳號，Token 儲存在管理者本機 macOS Keychain。</p>
+      </section>
+      <section class="card">
+        <h3>影片發布</h3>
+        <p>管理者選擇 Ecoco 自有影片，確認標題、隱私、互動與商業內容揭露後，App 透過 Content Posting API 上傳並發布。</p>
+      </section>
+      <section class="card">
+        <h3>成效回報</h3>
+        <p>App 讀取 TikTok 官方 API 可提供的粉絲統計、已公開影片清單、觀看、按讚與留言等資料。若平台或權限未提供，報表會標示未提供。</p>
+      </section>
+      <section class="card">
+        <h3>安全稽核</h3>
+        <p>App 保存本機工作紀錄以避免重複發布，並且不讀取 Cookie、不保存密碼、不繞過登入、CAPTCHA 或任何平台限制。</p>
+      </section>
+    </div>
+
+    <h2>授權範圍與用途</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Scope</th>
+          <th>使用原因</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>user.info.basic</td><td>辨識授權帳號，確認目前連線的是 Ecoco 官方 TikTok 帳號。</td></tr>
+        <tr><td>user.info.stats</td><td>取得粉絲與帳號統計，產生每日社群數據回報。</td></tr>
+        <tr><td>video.list</td><td>確認當日影片是否實際公開，並讀取 TikTok 官方可見的影片成效。</td></tr>
+        <tr><td>video.upload</td><td>上傳管理者選定的 Ecoco 自有短影音。</td></tr>
+        <tr><td>video.publish</td><td>在人工確認後發布影片至 Ecoco 官方 TikTok 帳號。</td></tr>
+      </tbody>
+    </table>
+
+    <h2>測試流程</h2>
+    <ol>
+      <li>打開本頁與隱私政策、服務條款，確認這是完整公開說明而不是登入頁。</li>
+      <li>觀看下方示範影片，確認 App 處理的是 Ecoco 自有商品教育短影音。</li>
+      <li>在 TikTok 審核環境中使用 Login Kit 授權測試帳號或 Ecoco 授權帳號。</li>
+      <li>檢查 App 只會要求上方列出的必要 scope。</li>
+      <li>在 demo 中確認發布前有人工作業確認，不會自動大量發布或繞過平台審核。</li>
+    </ol>
+
+    <h2>示範內容</h2>
+    <p>這段影片代表 App 會上傳的內容類型：Ecoco 自有品牌、繁體中文、商品使用情境與生活教育內容。</p>
+    <video class="demo-video" controls playsinline preload="metadata" src="media/E24235_traditional_9x16.mp4"></video>
+
+    <h2>資料處理承諾</h2>
+    <ul>
+      <li>不出售或分享 TikTok 使用者資料給第三方行銷名單。</li>
+      <li>不代表非 Ecoco 帳號發布內容。</li>
+      <li>不收集 TikTok 密碼、Cookie 或瀏覽器工作階段。</li>
+      <li>不以爬蟲或畫面擷取取代 TikTok 官方 API 權限。</li>
+      <li>撤銷授權後，App 不再代表該 TikTok 帳號呼叫 API。</li>
+    </ul>
+
+    <h2>聯絡方式</h2>
+    <p>如需測試帳號、審核協助、資料刪除或安全問題，請透過 Ecoco 官方社群帳號或 Ecoco 官方賣場客服聯絡管理者。</p>
+
+    <p class="footer"><a href="index.html">首頁</a> · <a href="tiktok-terms.html">服務條款</a> · <a href="tiktok-privacy-policy.html">隱私政策</a></p>
+  </main>
+</body>
+</html>
