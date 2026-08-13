@@ -3,66 +3,134 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ecoco 本機短影音發布器</title>
+  <meta name="description" content="Ecoco Creator Studio helps authorized Taiwan-based creators prepare, review, publish and verify product education videos through TikTok official APIs.">
+  <title>Ecoco Creator Studio｜TikTok Content Publishing Platform</title>
   <link rel="stylesheet" href="legal.css">
 </head>
 <body>
-  <main>
-    <p class="eyebrow">Ecoco 台灣團隊</p>
-    <h1>Ecoco 本機短影音發布器</h1>
-    <p class="lead">一套給 Ecoco 台灣內部營運人員使用的桌面工具，用來管理自有繁體商品短影音、檢查成效，並透過 TikTok 官方 API 發布至 Ecoco 官方 TikTok 帳號。</p>
+  <main class="site-shell">
+    <nav class="topbar" aria-label="主要導覽">
+      <a class="brand" href="index.html" aria-label="Ecoco Creator Studio home">
+        <span class="brand-mark">E</span>
+        <span>Ecoco Creator Studio</span>
+      </a>
+      <div class="nav-links">
+        <a href="tiktok-app.html">App review</a>
+        <a href="review-checklist.html">Checklist</a>
+        <a href="tiktok-privacy-policy.html">Privacy</a>
+        <a class="nav-cta" href="tiktok-terms.html">Terms</a>
+      </div>
+    </nav>
 
-    <section class="panel">
-      <h2>這個 App 做什麼</h2>
-      <p>Ecoco 本機短影音發布器不是登入頁，也不是一般行銷 landing page。它是 Ecoco 台灣團隊正在使用的內部營運工具公開說明頁，讓 TikTok 審核人員了解 App 的產品目的、授權流程、資料使用方式與測試內容。</p>
-      <ul>
-        <li>整理 Ecoco 自有商品影片與已核准文案。</li>
-        <li>讓授權管理者確認標題、隱私設定、互動設定與商業內容揭露。</li>
-        <li>使用 TikTok Content Posting API 上傳並發布自有影片。</li>
-        <li>使用 TikTok 官方 API 讀取帳號基本資訊、粉絲統計與影片列表，用於每日社群成效回報。</li>
-      </ul>
+    <section class="hero split">
+      <div class="hero-copy">
+        <p class="status-pill">Taiwan · Traditional Chinese · Creator-controlled publishing</p>
+        <h1>Product-video publishing with review, evidence and creator control.</h1>
+        <p class="lead">Ecoco Creator Studio is a TikTok publishing workflow for authorized Ecoco Taiwan creators. It prepares owned short-form product education videos, shows the creator the account and publishing options, sends approved content through TikTok official APIs, and records evidence for daily social reporting.</p>
+        <div class="actions">
+          <a class="button primary" href="tiktok-app.html">View app review details</a>
+          <a class="button secondary" href="review-checklist.html">Open review checklist</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Publishing workflow summary">
+        <div class="workflow-line">
+          <span>1</span>
+          <p><strong>Authorize</strong><br>Creator signs in with TikTok Login Kit and grants only required scopes.</p>
+        </div>
+        <div class="workflow-line">
+          <span>2</span>
+          <p><strong>Review</strong><br>Creator confirms account, video, caption, privacy and disclosure settings.</p>
+        </div>
+        <div class="workflow-line">
+          <span>3</span>
+          <p><strong>Publish</strong><br>Approved content is uploaded through TikTok Content Posting API when available.</p>
+        </div>
+        <div class="workflow-line">
+          <span>4</span>
+          <p><strong>Verify</strong><br>Posting status and available metrics are recorded without guessing missing data.</p>
+        </div>
+      </aside>
     </section>
 
-    <section class="panel">
-      <h2>服務區域</h2>
-      <p>本 App 僅供 Ecoco Taiwan 團隊在台灣營運官方 TikTok 帳號使用，內容為繁體中文商品教育短影音。Ecoco 不在中國大陸地區提供此 TikTok App，也不要求中國大陸 IP 位址存取或測試本服務。</p>
+    <section class="proof-grid" aria-label="Product assurances">
+      <article>
+        <h2>Not a login-only page</h2>
+        <p>This site explains the product, requested scopes, publishing flow, user controls, data use, review demo and safety boundaries.</p>
+      </article>
+      <article>
+        <h2>Built for authorized creators</h2>
+        <p>The platform is designed for creators and operators who are authorized to publish Ecoco-owned product education videos in Taiwan.</p>
+      </article>
+      <article>
+        <h2>Official API first</h2>
+        <p>The workflow uses TikTok official APIs for account authorization, publishing and read-only reporting. It does not collect passwords, cookies or browser sessions.</p>
+      </article>
     </section>
 
-    <h2>運作方式</h2>
-    <ol>
-      <li>授權管理者透過 TikTok Login Kit 登入。</li>
-      <li>App 以 OAuth 2.0、PKCE 與 state 驗證完成授權，不要求或保存 TikTok 密碼。</li>
-      <li>工具查詢帳號可用的發布、隱私、互動與創作者設定。</li>
-      <li>管理者選擇 Ecoco 自有影片並確認標題、揭露與發布設定。</li>
-      <li>工具以 TikTok Content Posting API 上傳、發布，並查詢發布結果。</li>
-      <li>每日報表只讀取官方 API 提供的粉絲、影片清單與可見成效資料；平台未提供時會標示為未提供，不推測。</li>
-    </ol>
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="label">Product scope</p>
+        <h2>A publishing system for product education videos.</h2>
+      </div>
+      <div class="two-column">
+        <div>
+          <p>Ecoco Creator Studio helps prepare and publish short-form videos that show real home-goods use cases: storage, cleaning, kitchen organization, bathroom organization and small-space living. The content is owned or licensed by Ecoco and reviewed before publishing.</p>
+          <p>The product is not a scraping tool, bot farm or bulk spam publisher. It is a creator-facing workflow with explicit authorization, visible account context and creator-controlled posting settings.</p>
+        </div>
+        <ul class="check-list">
+          <li>Traditional Chinese video content for Taiwan audiences.</li>
+          <li>Human confirmation before a video is sent to TikTok.</li>
+          <li>Commercial content disclosure is part of the publishing checklist.</li>
+          <li>Missing metrics are reported as unavailable, not as zero.</li>
+        </ul>
+      </div>
+    </section>
 
-    <h2>要求的 TikTok 權限</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>權限</th>
-          <th>用途</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>user.info.basic</td><td>確認授權帳號與顯示名稱。</td></tr>
-        <tr><td>user.info.stats</td><td>讀取粉絲與公開統計，供每日社群報表使用。</td></tr>
-        <tr><td>video.list</td><td>核對官方帳號已公開影片清單與可見成效。</td></tr>
-        <tr><td>video.upload</td><td>上傳 Ecoco 已審核的自有短影音檔案。</td></tr>
-        <tr><td>video.publish</td><td>在管理者確認後發布至 Ecoco 官方 TikTok 帳號。</td></tr>
-      </tbody>
-    </table>
+    <section class="section-block visual-demo">
+      <div>
+        <p class="label">Review demo</p>
+        <h2>Representative video content</h2>
+        <p>The video below represents the type of approved Ecoco content handled by the app: vertical, Traditional Chinese, product-education oriented and suitable for a creator-controlled publishing flow.</p>
+      </div>
+      <video class="demo-video" controls playsinline preload="metadata" src="media/E24235_traditional_9x16.mp4"></video>
+    </section>
 
-    <h2>審核示範</h2>
-    <p>以下影片是 Ecoco 自有商品教育短影音，用於展示 App 會處理的內容類型。實際發布前，管理者仍會在本機工具確認影片、標題、隱私設定與商業內容揭露。</p>
-    <video class="demo-video" controls playsinline preload="metadata" src="media/E24235_traditional_9x16.mp4"></video>
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="label">Requested TikTok scopes</p>
+        <h2>Each permission has a narrow purpose.</h2>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Scope</th>
+            <th>Purpose inside Ecoco Creator Studio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>user.info.basic</td><td>Identify the authorized TikTok creator account and display account context before publishing.</td></tr>
+          <tr><td>user.info.stats</td><td>Read follower and public account statistics for daily reporting when TikTok provides the data.</td></tr>
+          <tr><td>video.list</td><td>Verify published videos and read available performance data for evidence-based reporting.</td></tr>
+          <tr><td>video.upload</td><td>Upload the creator-approved Ecoco video asset to TikTok.</td></tr>
+          <tr><td>video.publish</td><td>Publish only after the creator confirms video, caption, privacy, interaction and disclosure settings.</td></tr>
+        </tbody>
+      </table>
+    </section>
 
-    <h2>資料安全</h2>
-    <p>授權 Token 只保存在管理者 Mac 的 macOS Keychain。本工具不讀取瀏覽器 Cookie、不保存 TikTok 密碼，也不繞過平台安全驗證。</p>
+    <section class="section-block region-note">
+      <h2>Service region</h2>
+      <p>Ecoco Creator Studio supports Ecoco Taiwan publishing workflows and Traditional Chinese content. It is not offered in mainland China, does not target mainland China users, and does not require access from mainland China IP addresses for review or operation.</p>
+    </section>
 
-    <p class="footer"><a href="tiktok-app.html">完整 App 說明</a> · <a href="tiktok-terms.html">服務條款</a> · <a href="tiktok-privacy-policy.html">隱私政策</a></p>
+    <footer class="footer">
+      <p>Ecoco Creator Studio</p>
+      <div>
+        <a href="tiktok-app.html">App review details</a>
+        <a href="review-checklist.html">Review checklist</a>
+        <a href="tiktok-terms.html">Terms</a>
+        <a href="tiktok-privacy-policy.html">Privacy</a>
+      </div>
+    </footer>
   </main>
 </body>
 </html>
