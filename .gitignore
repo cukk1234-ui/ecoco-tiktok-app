@@ -1,0 +1,16 @@
+
+
+# Central-host candidate: secrets and generated Python files
+.env
+.env.*
+!.env.example
+.remote-token
+.telegram-live.json
+*.pem
+*.key
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
